@@ -179,6 +179,21 @@ var boards = [
     protocol: 'stk500v1'
   },
   {
+    name: 'mayfly',
+    baud: 57600,
+    signature: Buffer.from([0x1e, 0x97, 0x05]), // ATmega1284P
+    pageSize: 256,
+    numPages: 512,
+    timeout: 400,
+    productId: ['0x6001', '0xea60'], // FT232RL and CP2102
+    productPage: 'https://www.envirodiy.org/mayfly/hardware/details-and-specs/',
+    protocol: 'stk500v1',
+    aliases: [
+      'envirodiy-mayfly', 'envirodiy_mayfly',
+      'mayfly2', 'envirodiy_mayfly2'
+    ]
+  },
+  {
     name: 'qduino',
     baud: 57600,
     signature: Buffer.from([0x43, 0x41, 0x54, 0x45, 0x52, 0x49, 0x4e]),

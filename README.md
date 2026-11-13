@@ -114,6 +114,7 @@ When creating `new Avrgirl()`, only the `board` property is required. The board 
 |BQ ZUM|`bqZum`|
 |BQ ZUM Core 2|`zumcore2`|
 |BQ ZUM Junior|`zumjunior`|
+|EnviroDIY Mayfly|`mayfly`|
 
 You can optionally specify a port to connect to the Arduino, but if you omit this property avrgirl-arduino will do a pretty good job of finding it for you. **The exception to this is if you're using the Arduino Pro Mini - please specify your port in this case as avrgirl-arduino cannot auto detect it for you.**
 
@@ -277,7 +278,7 @@ Required flags:
 
 + **-f** specify the location of the hex file to flash
 + **-a** specify the spcification of the Arduino. It can be:
-  + the name of the Arduino (`uno`, `mega`,`leonardo`, `micro`, `nano`, `"nano (new bootloader)"`, `pro-mini`, `duemilanove168`, `yun`, `esplora`, `blend-micro`, `tinyduino`, `sf-pro-micro`, `qduino`, `pinoccio`, `feather`, or `imuduino`)
+  + the name of the Arduino (`uno`, `mega`,`leonardo`, `micro`, `nano`, `"nano (new bootloader)"`, `pro-mini`, `duemilanove168`, `yun`, `esplora`, `blend-micro`, `tinyduino`, `sf-pro-micro`, `qduino`, `pinoccio`, `feather`, `imuduino`, or `mayfly`)
   + a JavaScript file describing a custom board
 
 When using a custom board, the JavaScript file must export the board specification:
