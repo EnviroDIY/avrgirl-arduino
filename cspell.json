@@ -1,0 +1,31 @@
+{
+  "version": "0.2",
+  "ignorePaths": [],
+  "dictionaryDefinitions": [],
+  "dictionaries": [],
+  "words": [
+    "Adafruit",
+    "Arduboy",
+    "Atmega",
+    "avrgirl",
+    "Bitbloq",
+    "Duemilanove",
+    "EnviroDIY",
+    "esplora",
+    "Femtoduino",
+    "FTDI",
+    "imuduino",
+    "lilypad",
+    "Noopkat",
+    "pinoccio",
+    "qduino",
+    "Qtechknow",
+    "Sparkfun",
+    "spcification",
+    "tinyduino",
+    "zumcore",
+    "zumjunior"
+  ],
+  "ignoreWords": [],
+  "import": []
+}

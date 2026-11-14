@@ -87,34 +87,34 @@ avrgirl.flash('Blink.cpp.hex', function (error) {
 
 ```
 
-When creating `new Avrgirl()`, only the `board` property is required. The board names to use are detailed in the table below: 
+When creating `new Avrgirl()`, only the `board` property is required. The board names to use are detailed in the table below:
 
-|Programmer|Board Option String|
-|:----------|:--------------|
-|Arduino Uno|`uno`|
-|Arduino Mega|`mega`|
-|Arduino ADK|`adk`|
-|Arduino Leonardo|`leonardo`|
-|Arduino Micro|`micro`|
-|Arduino Nano|`nano`|
-|Arduino Nano (with new bootloader)|`nano (new bootloader)`|
-|Arduino Lilypad USB|`lilypad-usb`|
-|Arduino Duemilanove|`duemilanove168`|
-|Arduino Yun|`yun`|
-|Arduino Esplora|`esplora`|
-|RedBearLab Blend Micro|`blend-micro`|
-|Tiny Circuits Tinyduino|`tinyduino`|
-|SparkFun Pro Micro|`sf-pro-micro`|
-|Qtechknow Qduino|`qduino`|
-|Pinoccio Scout|`pinoccio`|
-|Femtoduino IMUduino|`imuduino`|
-|Adafruit Feather 32u4 Basic Proto|`feather`|
-|Arduboy|`arduboy`|
-|Adafruit Circuit Playground|`circuit-playground-classic`|
-|BQ ZUM|`bqZum`|
-|BQ ZUM Core 2|`zumcore2`|
-|BQ ZUM Junior|`zumjunior`|
-|EnviroDIY Mayfly|`mayfly`|
+| Programmer                         | Board Option String          |
+| :--------------------------------- | :--------------------------- |
+| Arduino Uno                        | `uno`                        |
+| Arduino Mega                       | `mega`                       |
+| Arduino ADK                        | `adk`                        |
+| Arduino Leonardo                   | `leonardo`                   |
+| Arduino Micro                      | `micro`                      |
+| Arduino Nano                       | `nano`                       |
+| Arduino Nano (with new bootloader) | `nano (new bootloader)`      |
+| Arduino Lilypad USB                | `lilypad-usb`                |
+| Arduino Duemilanove                | `duemilanove168`             |
+| Arduino Yun                        | `yun`                        |
+| Arduino Esplora                    | `esplora`                    |
+| RedBearLab Blend Micro             | `blend-micro`                |
+| Tiny Circuits Tinyduino            | `tinyduino`                  |
+| SparkFun Pro Micro                 | `sf-pro-micro`               |
+| Qtechknow Qduino                   | `qduino`                     |
+| Pinoccio Scout                     | `pinoccio`                   |
+| Femtoduino IMUduino                | `imuduino`                   |
+| Adafruit Feather 32u4 Basic Proto  | `feather`                    |
+| Arduboy                            | `arduboy`                    |
+| Adafruit Circuit Playground        | `circuit-playground-classic` |
+| BQ ZUM                             | `bqZum`                      |
+| BQ ZUM Core 2                      | `zumcore2`                   |
+| BQ ZUM Junior                      | `zumjunior`                  |
+| EnviroDIY Mayfly                   | `mayfly`                     |
 
 You can optionally specify a port to connect to the Arduino, but if you omit this property avrgirl-arduino will do a pretty good job of finding it for you. **The exception to this is if you're using the Arduino Pro Mini - please specify your port in this case as avrgirl-arduino cannot auto detect it for you.**
 
@@ -178,7 +178,7 @@ flashing, please wait...
 flash complete.
 ```
 
-**Prefer your own custom debug behaviour?** No Problem!
+**Prefer your own custom debug behavior?** No Problem!
 
 You can pass in your own debug function instead of a boolean, and avrgirl-arduino will run that instead.
 
@@ -196,7 +196,7 @@ var avrgirl = new Avrgirl({
 });
 ```
 
-**Have a device that requires a manual reset?** 
+**Have a device that requires a manual reset?**
 
 You can pass in a `manualReset` property as a boolean, in either your custom board object _or_ in the general Avrgirl options. This will skip the reset flow when flashing the board. Please note that this is only available for use with boards that speak the AVR109 protocol (most ATMega32U4 powered boards).
 
@@ -230,7 +230,7 @@ var avrgirl = new Avrgirl({
 });
 ```
 
-**Want to Disable Code Verification?** 
+**Want to Disable Code Verification?**
 
 You can pass in a `disableVerify` property as a boolean, in either your custom board object _or_ in the general Avrgirl options. This will skip the Verification after flashing the board. Please note that this is only available for use with boards that speak the AVR109 protocol (most ATMega32U4 powered boards).
 
@@ -332,7 +332,7 @@ A .hex file is the compiled end result of an Arduino sketch file. I have provide
 
 The most common way to compile a sketch for your Arduino of choice is to download and install the [Arduino IDE](https://www.arduino.cc/en/Main/Software). Ensure you install version 1.6.5 or greater for the following steps.
 
-1. Open the sketch file you'd like to export, or write a new one if you need to. 
+1. Open the sketch file you'd like to export, or write a new one if you need to.
 2. Choose the correct target Arduino board you want to compile the hex file for, from the Tools -> Board menu.
 3. Export your hex file by navigating to Sketch -> Export compiled binary
 ![screenshot of the Sketch menu in Arduino IDE with Export compiled binary menu item highlighted in blue](http://f.cl.ly/items/0r1A082H3U3G0U2z1Z40/export_bin.png)
@@ -357,3 +357,5 @@ Credit to [Jacob Rosenthal](https://github.com/jacobrosenthal), [Ryan Day](https
 + [Kimio Kosaka](https://github.com/kimio-kosaka)
 + [Sandeep Mistry](https://github.com/sandeepmistry)
 + [Nick Hehr](https://github.com/hipsterbrown)
+
+<!-- cSpell:ignore usbmodem -->

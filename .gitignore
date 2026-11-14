@@ -9,3 +9,4 @@ coverage
 # Files
 *.swp
 *.log
+.history
